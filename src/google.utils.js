@@ -19,7 +19,7 @@ const createFolder = async (folderName) => {
   const folderMetadata = {
     name: folderName,
     mimeType: 'application/vnd.google-apps.folder',
-    parents: ['1gBjYTQseP7KEcPqAoI_5k_I9FQk4JeC8'], 
+    parents: ['FOLDER_ID'], 
   };
 
   const createdFolder =  await drive.files.create({
