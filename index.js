@@ -1,6 +1,7 @@
 const { app, BrowserWindow, ipcMain, dialog } = require('electron')
 const path = require('path')
 const { createFolder, uploadFileToDrive } = require('./src/google.utils')
+const { generateDateStringFromDate } = require('./src/utils')
 const https = require('https');
 const prompt = require('electron-prompt');
 
@@ -30,7 +31,7 @@ ipcMain.handle('openFileSelectionDialog', async (event) => {
         properties: ['openFile', 'multiSelections'],
     });
 
-    const folder = await createFolder("Test-1")
+    const folder = await createFolder(generateDateStringFromDate(new Date()))
 
     result.filePaths.forEach(async (e) => {
         await uploadFileToDrive(e, folder.id)
