@@ -1,0 +1,22 @@
+{
+  "name": "up-qr",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "TuanLM",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "yarn start",
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "dependencies": {
+    "electron-prompt": "^1.7.0",
+    "googleapis": "^121.0.0",
+    "qrcode": "^1.5.3"
+  },
+  "devDependencies": {
+    "electron": "^25.2.0",
+    "electron-builder": "^24.4.0"
+  }
+}

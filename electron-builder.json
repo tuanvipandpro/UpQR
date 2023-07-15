@@ -1,0 +1,15 @@
+{
+    "appId": "com.tuanlm.app",
+    "productName": "UpQR",
+    "directories": {
+        "output": "dist"
+    },
+    "win": {
+        "target": "msi",
+        "icon": "icon.ico"
+    },
+    "nsis": {
+        "oneClick": false,
+        "allowToChangeInstallationDirectory": true
+    }
+}
